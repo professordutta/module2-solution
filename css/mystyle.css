@@ -1,0 +1,99 @@
+#messagetop{
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#mess{
+	font-family: "Ubuntu Condensed", sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.tiles{
+	display: flex;
+	/*justify-content: space-between;*/
+    align-items: center;
+    padding: 60px 100px;
+    flex-wrap: wrap;
+}
+
+p.solid {
+	border-style: solid;
+	background-color: #d3d3d3;
+	font-family: "Ubuntu Condensed", sans-serif;
+}
+
+#s1{
+	background-color: #FFC0CB;
+}
+
+#s2{
+	background-color: #DC143C;
+	color: #FFFFFF;
+	border-bottom: solid;
+	border-color: #000000;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+}
+
+#s3{
+	background-color: #FFFACD;
+}
+
+
+span{
+	float: right;
+	border-left: solid;
+	border-left-width: 2px;
+	border-bottom: solid;
+	border-bottom-width: 2px;
+	font-size: 1.2em;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: "Ubuntu Condensed", sans-serif;
+	
+}
+
+.left-column{
+
+	margin-right: 10px;
+	flex: 30%;
+
+}
+
+
+
+/*applying media queries here*/
+
+/*This is for mobile view*/
+
+@media (max-width: 767px) {
+
+	.tiles{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 60px 60px;
+		margin:20px;
+	}
+	
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+	.left-column{
+
+	flex: 35%;
+
+}
+
+
+	
+} 
+
+	
+	
+}
